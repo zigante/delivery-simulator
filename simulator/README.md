@@ -35,6 +35,14 @@ Make sure you have all the environment variables configured in your developer en
 
 You should open 3 simultaneous terminals (Application, Kafka Producer and Kafka Consumer)
 
+##### Docker containers
+
+```sh
+cd .docker/
+docker-compose up -d
+cd ../
+```
+
 ##### Application
 
 ```sh
@@ -44,22 +52,18 @@ go run main.go
 ##### Kafka Producer
 
 ```sh
-cd .docker/
-docker-compose up -d
-docker-compose exec app bash
-kafka-console-producer --bootstrap-server=localhost:9092 --topic=route.new-position
+docker exec -it docker_kafka_1 bash
+kafka-console-producer --bootstrap-server=localhost:9092 --topic=route.new-direction
 ```
 
 ##### Kafka Consumer
 
 ```sh
-cd .docker/
-docker-compose up -d
-docker-compose exec app bash
-kafka-console-consumer --bootstrap-server=localhost:9092 --topic=route.new-direction --group=terminal
+docker exec -it docker_kafka_1 bash
+kafka-console-consumer --bootstrap-server=localhost:9092 --topic=route.new-position --group=terminal
 ```
 
-Then send one of the following payloads to kafka consumer (`paste at bash terminal`) and see the message been proccessed in real-time:
+Then send one of the following payloads to kafka consumer app (`paste at bash terminal`) and see the message been proccessed in real-time:
 
 ```json
 {"clientId":"1","routeId":"1"}
