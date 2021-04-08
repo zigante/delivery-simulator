@@ -18,9 +18,9 @@ func init() {
 }
 
 func main() {
-
 	messageChannel := make(chan *confluentKafka.Message)
 	consumer := kafka.NewKafkaConsumer(messageChannel)
+
 	go consumer.Consume()
 
 	for message := range messageChannel {

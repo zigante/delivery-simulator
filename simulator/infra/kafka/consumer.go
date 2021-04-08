@@ -33,8 +33,8 @@ func (kafkaConsumer *KafkaConsumer) Consume() {
 	}
 }
 
-func NewKafkaConsumer(messegaChannel chan *confluentKafka.Message) *KafkaConsumer {
+func NewKafkaConsumer(messageChannel chan *confluentKafka.Message) *KafkaConsumer {
 	return &KafkaConsumer{
-		MessageChannel: messegaChannel,
+		MessageChannel: messageChannel,
 	}
 }
