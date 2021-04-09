@@ -1,3 +1,4 @@
+export * from './classes';
 export * from './envs';
 export * from './geolocation';
 export * from './markerIcon';

@@ -8,3 +8,8 @@ export interface IRoute {
   startPosition: Position;
   endPosition: Position;
 }
+
+export interface IRouteOptions {
+  currentMarkerOption: google.maps.ReadonlyMarkerOptions;
+  endMarkerOption: google.maps.ReadonlyMarkerOptions;
+}
