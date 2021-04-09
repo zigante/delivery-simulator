@@ -23,10 +23,10 @@ Make sure you have all the environment variables configured in your developer en
 go run main.go
 ```
 
-Send one of the following payloads to kafka consumer app (`paste at bash terminal`) and see the message been proccessed in real-time:
+Send one of the following payloads to [kafka producer]('../monitoring/README.md') app (`paste at bash terminal`) and see the message been proccessed in real-time:
 
 ```json
-{"clientId":"1","routeId":"1"}
-{"clientId":"2","routeId":"2"}
-{"clientId":"3","routeId":"3"}
+{"clientId":"a","routeId":"1"}
+{"clientId":"b","routeId":"2"}
+{"clientId":"c","routeId":"3"}
 ```

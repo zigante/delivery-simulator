@@ -114,7 +114,7 @@ services:
         soft: -1
         hard: -1
     volumes:
-      - ./elasticsearch:/usr/share/elasticsearch/data
+      - ./elasticsearch:/usr/share/data
     ports:
       - 9200:9200
     extra_hosts:
