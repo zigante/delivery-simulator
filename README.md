@@ -20,9 +20,9 @@ make sure you have the following line in the file:
 
 ## Applications
 
-### [Kafka Applications](./.docker/kafka/README.md)
+### [Kafka Applications](./monitoring/kafka/README.md)
 
-### [Elasticsearch Applications](./.docker/elasticsearch/README.md)
+### [Elasticsearch Applications](./monitoring/elasticsearch/README.md)
 
 ### [Simulator](./simulator/README.md)
 

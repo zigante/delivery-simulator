@@ -6,7 +6,7 @@ Repository built using Golang + Kafka
 
 ## Before Running
 
-**Important**: [`Kafka Applications should been running first of all.`](../kafka/README.md)
+**Important**: [`Monitoring Applications should been running first of all.`](../monitoring/README.md)
 
 Make sure you have all the environment variables configured in your developer environment:
 
