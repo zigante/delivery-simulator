@@ -2,11 +2,11 @@
 
 ## Description
 
-Repository built using Typescript + Nestjs + Kafka + MongoDB + Docker
+Repository built using Typescript + Nestjs + Websockets + Kafka + MongoDB + Docker
 
 ## Before Running
 
-Make sure that the [`Routes and Destinations Simulator`](../simulator/README.md) is already running in the background
+**Important**: [`Make sure that the Simulator is already running in the background`](../simulator/README.md)
 
 Install all the dependencies
 
