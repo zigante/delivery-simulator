@@ -4,7 +4,7 @@ services:
   app:
     container_name: back-end
     build: .
-    entrypoint: ./.docker/entrypoint.sh
+    entrypoint: ./scripts/entrypoint.sh
     ports:
       - 3000:3000
     volumes:
@@ -17,8 +17,8 @@ services:
     image: mongo:4.4.4
     restart: always
     volumes:
-      - ./.docker/dbdata:/data/db
-      - ./.docker/mongo:/docker-entrypoint-initdb.d
+      - ./data/dbdata:/data/db
+      - ./data/mongo:/docker-entrypoint-initdb.d
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=root
@@ -31,7 +31,7 @@ services:
     ports:
       - 8081:8081
     environment:
-      - ME_CONFIG_MONGODB_SERVER=db
+      - ME_CONFIG_MONGODB_SERVER=mongodb
       - ME_CONFIG_MONGODB_AUTH_USERNAME=root
       - ME_CONFIG_MONGODB_AUTH_PASSWORD=root
       - ME_CONFIG_MONGODB_ADMINUSERNAME=root
