@@ -112,7 +112,7 @@ const Mappings: React.FC = () => {
         socketIOReference.current?.emit('new-direction', { routeId: currentRoute });
       } catch (error) {
         if (error instanceof RouteExistsError)
-          return enqueueSnackbar(`${currentRoute} já adicionado, espere finalziar.`, { variant: 'error' });
+          return enqueueSnackbar(`${currentRoute} já adicionado, espere finaliziar.`, { variant: 'error' });
         throw error;
       }
 
