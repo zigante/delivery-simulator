@@ -52,14 +52,14 @@ go run main.go
 ##### Kafka Producer
 
 ```sh
-docker exec -it docker_kafka_1 bash
+docker exec -it kafka bash
 kafka-console-producer --bootstrap-server=localhost:9092 --topic=route.new-direction
 ```
 
 ##### Kafka Consumer
 
 ```sh
-docker exec -it docker_kafka_1 bash
+docker exec -it kafka bash
 kafka-console-consumer --bootstrap-server=localhost:9092 --topic=route.new-position --group=terminal
 ```
 
