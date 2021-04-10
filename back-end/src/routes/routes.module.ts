@@ -3,8 +3,8 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Route, RouteSchema } from './entities/route.entity';
 import { RoutesController } from './routes.controller';
-import { RoutesService } from './routes.service';
 import { RoutesGateway } from './routes.gateway';
+import { RoutesService } from './routes.service';
 
 @Module({
   imports: [
@@ -15,7 +15,16 @@ import { RoutesGateway } from './routes.gateway';
         useFactory: () => ({
           transport: Transport.KAFKA,
           options: {
-            client: { clientId: process.env.KAFKA_CLIENT_ID, brokers: [process.env.KAFKA_BROKER] },
+            client: {
+              clientId: process.env.KAFKA_CLIENT_ID,
+              brokers: [process.env.KAFKA_BROKER],
+              ssl: true,
+              sasl: {
+                mechanism: 'plain',
+                username: process.env.CONFLUENT_CLUSTER_API_KEY,
+                password: process.env.CONFLUENT_CLUSTER_API_SECRET,
+              },
+            },
             consumer: {
               groupId: process.env.KAFKA_CONSUMER_GROUP_ID
                 ? process.env.KAFKA_CONSUMER_GROUP_ID

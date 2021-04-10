@@ -16,12 +16,14 @@ yarn
 
 Make sure you have all the environment variables configured in your developer environment:
 
-| Name                    |     | Description                    |     | Default Value                                |
-| ----------------------- | --- | ------------------------------ | --- | -------------------------------------------- |
-| KAFKA_CLIENT_ID         |     | Kafka client ID                |     | delivery-simulator                           |
-| KAFKA_BROKER            |     | Kafka server host              |     | host.docker.internal:9094                    |
-| KAFKA_CONSUMER_GROUP_ID |     | Group ID that will be consumed |     | -                                            |
-| MONGO_DSN               |     | MongoDB connection string      |     | mongodb://root:root@db/nest?authSource=admin |
+| Name                         |     | Description                    |     | Default Value                                |
+| ---------------------------- | --- | ------------------------------ | --- | -------------------------------------------- |
+| KAFKA_CLIENT_ID              |     | Kafka client ID                |     | delivery-simulator                           |
+| KAFKA_BROKER                 |     | Kafka server host              |     | host.docker.internal:9094                    |
+| KAFKA_CONSUMER_GROUP_ID      |     | Group ID that will be consumed |     | -                                            |
+| MONGO_DSN                    |     | MongoDB connection string      |     | mongodb://root:root@db/nest?authSource=admin |
+| CONFLUENT_CLUSTER_API_KEY    |     | Cluster username               |     | -                                            |
+| CONFLUENT_CLUSTER_API_SECRET |     | Cluster password               |     | -                                            |
 
 ## Running The Application
 
