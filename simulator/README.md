@@ -16,8 +16,8 @@ Make sure you have all the environment variables configured in your developer en
 | KAFKA_CONSUMER_GROUP_ID      |     | Group ID that will be consumed |     | simulator                 |
 | KAFKA_PRODUCE_TOPIC          |     | Kafka writing topic            |     | route.new-position        |
 | KAFKA_READ_TOPIC             |     | Kafka reading topic            |     | route.new-direction       |
-| CONFLUENT_SECURITY_PROTOCOL  |     |                                |     | SASL_SSL                  |
-| CONFLUENT_SASL_MECHANISMS    |     |                                |     | PLAIN                     |
+| CONFLUENT_SECURITY_PROTOCOL  |     |                                |     | "SASL_SSL"                |
+| CONFLUENT_SASL_MECHANISMS    |     |                                |     | "PLAIN"                   |
 | CONFLUENT_CLUSTER_API_KEY    |     | Cluster username               |     | -                         |
 | CONFLUENT_CLUSTER_API_SECRET |     | Cluster password               |     | -                         |
 
