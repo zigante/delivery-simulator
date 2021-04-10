@@ -1,4 +1,4 @@
-# Delivery Simulator - Back-end Application
+# Delivery Simulator - Backend Application
 
 ## Description
 

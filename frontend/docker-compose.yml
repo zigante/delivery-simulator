@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    container_name: front-end
+    container_name: frontend
     build: .
     entrypoint: ./.docker/entrypoint.sh
     ports:

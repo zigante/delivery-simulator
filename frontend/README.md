@@ -1,4 +1,4 @@
-# Delivery Simulator - Back-end Application
+# Delivery Simulator - Frontend Application
 
 ## Description
 
@@ -6,7 +6,7 @@ Repository built using Typescript + ReactJS + Docker + Websockets
 
 ## Before Running
 
-**Important**: [`Make sure that the Backend application is already running in the background`](../back-end/README.md)
+**Important**: [`Make sure that the Backend application is already running in the background`](../backend/README.md)
 
 Install all the dependencies
 

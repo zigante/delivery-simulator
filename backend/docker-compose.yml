@@ -2,7 +2,7 @@ version: '3'
 
 services:
   app:
-    container_name: back-end
+    container_name: backend
     build: .
     entrypoint: ./scripts/entrypoint.sh
     ports:
@@ -24,8 +24,8 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=root
       - MONGO_INITDB_DATABASE=nest
 
-  mongodb-front-end:
-    container_name: mongodb-front-end
+  mongodb-frontend:
+    container_name: mongodb-frontend
     image: mongo-express
     restart: always
     ports:

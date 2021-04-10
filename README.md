@@ -22,9 +22,9 @@ make sure you have the following line in the file:
 
 ### [Simulator](./simulator/README.md)
 
-### [Backend Application](./back-end/README.md)
+### [Backend Application](./backend/README.md)
 
-### [Frontend Application](./front-end/README.md)
+### [Frontend Application](./frontend/README.md)
 
 ### For Windows
 
