@@ -1,4 +1,4 @@
-# My Delivery - Back-end Application
+# Delivery Simulator - Back-end Application
 
 ## Description
 
@@ -18,7 +18,7 @@ Make sure you have all the environment variables configured in your developer en
 
 | Name                    |     | Description                    |     | Default Value                                |
 | ----------------------- | --- | ------------------------------ | --- | -------------------------------------------- |
-| KAFKA_CLIENT_ID         |     | Kafka client ID                |     | my-delivery                                  |
+| KAFKA_CLIENT_ID         |     | Kafka client ID                |     | delivery-simulator                           |
 | KAFKA_BROKER            |     | Kafka server host              |     | host.docker.internal:9094                    |
 | KAFKA_CONSUMER_GROUP_ID |     | Group ID that will be consumed |     | -                                            |
 | MONGO_DSN               |     | MongoDB connection string      |     | mongodb://root:root@db/nest?authSource=admin |

@@ -1,4 +1,4 @@
-# My Delivery - Routes and Destinations Simulator
+# Delivery Simulator - Routes and Destinations Simulator
 
 ## Description
 

@@ -7,8 +7,8 @@ import (
 	"time"
 
 	confluentKafka "github.com/confluentinc/confluent-kafka-go/kafka"
-	route "github.com/zigante/code-delivery/simulator/app/route"
-	"github.com/zigante/code-delivery/simulator/infra/kafka"
+	route "github.com/zigante/delivery-simulator/app/route"
+	"github.com/zigante/delivery-simulator/infra/kafka"
 )
 
 func Produce(message *confluentKafka.Message) {

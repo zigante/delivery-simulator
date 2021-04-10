@@ -6,8 +6,8 @@ import (
 
 	confluentKafka "github.com/confluentinc/confluent-kafka-go/kafka"
 	dotenv "github.com/joho/godotenv"
-	kafkaApp "github.com/zigante/code-delivery/simulator/app/kafka"
-	kafka "github.com/zigante/code-delivery/simulator/infra/kafka"
+	kafkaApp "github.com/zigante/delivery-simulator/app/kafka"
+	kafka "github.com/zigante/delivery-simulator/infra/kafka"
 )
 
 func init() {

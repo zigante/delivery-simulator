@@ -1,4 +1,4 @@
-module github.com/zigante/code-delivery/simulator
+module github.com/zigante/delivery-simulator
 
 go 1.13
 

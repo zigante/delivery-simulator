@@ -1,8 +1,6 @@
-# My Delivery
+# Delivery simulator
 
-## Description
-
-Delivery simulator built using Golang + Typescript + Nestjs + ReactJS + Websockets + Kafka + Kafka Connector + MongoDB + Docker + Elasticsearch + K8s
+Project built using Golang + Typescript + Nestjs + ReactJS + Websockets + Kafka + Kafka Connector + MongoDB + Docker + Elasticsearch + K8s
 
 ## Configuring /etc/hosts
 
@@ -20,9 +18,7 @@ make sure you have the following line in the file:
 
 ## Applications
 
-### [Kafka Applications](./monitoring/kafka/README.md)
-
-### [Elasticsearch Applications](./monitoring/elasticsearch/README.md)
+### [Monitoring](./monitoring/README.md)
 
 ### [Simulator](./simulator/README.md)
 
