@@ -1,29 +1,30 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simulator
+  name: backend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: simulator
+      app: backend
   template:
     metadata:
       labels:
-        app: simulator
+        app: backend
     spec:
       containers:
-        - name: simulator
-          image: zigante/delivery-simulator-app:latest
+        - name: backend
+          image: zigante/delivery-simulator-backend:latest
+          ports:
+            - containerPort: 3000
           volumeMounts:
-            - name: simulator-volume
-              mountPath: /go/src/.env
+            - name: backend-volume
+              mountPath: /home/node/app/.env
               subPath: .env
-
       volumes:
-        - name: simulator-volume
+        - name: backend-volume
           configMap:
-            name: simulator-configs
+            name: backend-configs
             items:
               - key: env
                 path: .env

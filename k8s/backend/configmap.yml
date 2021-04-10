@@ -1,14 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: simulator-configs
+  name: backend-configs
 data:
   env: |
-    KAFKA_BOOTSTRAP_SERVERS=pkc-43n10.us-central1.gcp.confluent.cloud:9092
+    MONGO_DSN=mongodb://root:root@mongodb/nest?authSource=admin
+    KAFKA_CLIENT_ID=simulator
+    KAFKA_BROKER=pkc-43n10.us-central1.gcp.confluent.cloud:9092
     KAFKA_CONSUMER_GROUP_ID=simulator
-    KAFKA_PRODUCE_TOPIC=route.new-position
-    KAFKA_READ_TOPIC=route.new-direction
-    CONFLUENT_SECURITY_PROTOCOL="SASL_SSL"
-    CONFLUENT_SASL_MECHANISMS="PLAIN"
-    CONFLUENT_CLUSTER_API_KEY="J22YLQHC3LX47WP3"
-    CONFLUENT_CLUSTER_API_SECRET="x4PO/A2d/T4B7lj0AT5U51PEIA2X9I028rKz9scTsFUtmId5/LEOJQ8O4JSktoKB"
+    CONFLUENT_CLUSTER_API_KEY=J22YLQHC3LX47WP3
+    CONFLUENT_CLUSTER_API_SECRET=x4PO/A2d/T4B7lj0AT5U51PEIA2X9I028rKz9scTsFUtmId5/LEOJQ8O4JSktoKB
