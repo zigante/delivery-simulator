@@ -10,6 +10,10 @@ import (
 func NewKafkaProducer() *confluentKafka.Producer {
 	configMap := &confluentKafka.ConfigMap{
 		"bootstrap.servers": os.Getenv("KAFKA_BOOTSTRAP_SERVERS"),
+		"security.protocol": os.Getenv("CONFLUENT_SECURITY_PROTOCOL"),
+		"sasl.mechanisms":   os.Getenv("CONFLUENT_SASL_MECHANISMS"),
+		"sasl.username":     os.Getenv("CONFLUENT_CLUSTER_API_KEY"),
+		"sasl.password":     os.Getenv("CONFLUENT_CLUSTER_API_SECRET"),
 	}
 
 	producer, err := confluentKafka.NewProducer(configMap)
